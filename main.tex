@@ -1,0 +1,135 @@
+%----------------------------------------------------------------------------------------
+%   PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[10pt,a4paper,sans]{moderncv}
+
+\moderncvstyle{classic}
+\moderncvcolor{blue}
+
+\usepackage{lipsum}
+\usepackage[utf8]{inputenc}
+\usepackage[scale=0.85]{geometry} % Reduce document margins
+%\setlength{\hintscolumnwidth}{3cm} % Uncomment to change the width of the dates column
+%\setlength{\makecvtitlenamewidth}{10cm} % For the 'classic' style, uncomment to adjust the width of the space allocated to your name
+
+%----------------------------------------------------------------------------------------
+%   CUSTOM FUNCTIONS
+%----------------------------------------------------------------------------------------
+
+\newcommand{\cvreference}[7]{%
+    \textbf{#1}\newline% Name
+    \ifthenelse{\equal{#2}{}}{}{\addresssymbol~#2\newline}%
+    \ifthenelse{\equal{#3}{}}{}{#3\newline}%
+    \ifthenelse{\equal{#4}{}}{}{#4\newline}%
+    \ifthenelse{\equal{#5}{}}{}{#5\newline}%
+    \ifthenelse{\equal{#6}{}}{}{\emailsymbol~\texttt{#6}\newline}%
+    \ifthenelse{\equal{#7}{}}{}{\phonesymbol~#7}}
+
+
+
+%----------------------------------------------------------------------------------------
+%   NAME AND CONTACT INFORMATION SECTION
+%----------------------------------------------------------------------------------------
+
+\firstname{David}
+\familyname{Brawand, PhD}
+\title{Clinical Informatics Lead \newline \small{King's College Hospital | Precision Medicine} \newline \small{King's College Hospital} \newline \small{Denmark Hill, London, SE5 9RS}}
+\address{Wimbledon Park Road, Flat 11}{London, SW19 6NN}
+%\extrainfo{}
+\mobile{+44 7423 632 393}
+\email{dbrawand@nhs.net}
+%\photo[70pt][0.4pt]{pictures/picture} % The first bracket is the picture height, the second is the
+
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+
+\makecvtitle
+
+\section{Professional Experience and Teaching}
+\cventry{08/2017 -- present}{\textbf{Clinical Informatics Lead}}{Precision Medicine -- King's College Hospital}{London, UK}{}{Leading strategy and development of bioinformatics applications for clinical diagnostics and research.}
+\cventry{11/2017 -- present}{\textbf{Honorary Research Scientist}}{Faculty of Life Sciences and Medicine -- King's College London}{UK}{}{Sickle Cell Anaemia and Haemato-oncology}
+\cventry{07/2014 -- 08/2017}{\textbf{Bioinformatics Lead}}{Viapath | Molecular Pathology -- King's College Hospital}{London, UK}{}{Development and deployment of high throughput sequencing based diagnostic assays}
+\cventry{01/2013 -- 06/2014}{\textbf{Swiss National Science Foundation Research Fellow}}{University of Oxford -- Functional Genomics Unit}{Oxford, UK}{}{Origin of miRNA decoys by gene duplication and their contribution to human gene expression evolution}
+\cventry{03/2012 -- 12/2012}{\textbf{Visiting Research Scientist}}{Broad Institute of MIT and Harvard -- Vertebrate Genome Biology}{Cambridge MA, USA}{}{Cichlid Fish Genome Seqencing Project / Ferret Genome Sequencing Project}
+\cventry{03/2012}{\textbf{Research Scientist}}{University of Oxford -- Functional Genomics Unit}{Oxford, UK}{}{}
+%\cventry{09/2010 -- 02/2012}{\textbf{Rowing Instructor}}{University of Lausanne -- SSU}{Service des Sports Universitatires, Lausanne}{}{}
+\cventry{04/2011 -- 09/2011}{\textbf{Senior Researcher}}{Center for Integrative Genomics and Swiss Institute of Bioinformatics -- Kaessmann Group}{University of Lausanne, CH}{}{Evolution of pseudogene preservation and transcription in mammals}
+\cventry{09/2006 -- 03/2011}{\textbf{Teaching Assistant -- ``Assistant diplômé''}}{Center for Integrative Genomics -- Kaessmann Group}{University of Lausanne, CH}{}{Teaching of molecular evolution course computer exercises}
+\cventry{04/2006 -- 08/2006}{\textbf{Research Assistant -- ``Assistant diplômé''}}{Center for Integrative Genomics -- Wahli Group}{University of Lausanne, CH}{}{Analysis of egg-protein evolution}
+\cventry{07/2004 -- 08/2004}{\textbf{Research Assistant -- ``Assistant étudiant''}}{DBMV -- Goloubinoff Group}{University of Lausanne, CH}{}{Analysis of heatshock response and priming in Arabidopsis thaliana \newline Custom chip microarraying of heatshock proteins with focus on chaperone expression priming}
+\cventry{07/2002 -- 09/2002}{\textbf{Research Assistant}}{Department of Forestry -- ETH}{Zurich, CH}{}{In field data collection \newline Analysis of biotope renaturation in absence of human intervention (long term study)}
+
+\section{Education}
+\cventry{10/2017 -- Present}{\textbf{Higher Specialist Scientist Training (HSST)}}{National School of Healthcare Science, NHS}{}{Doctorate of Clinical Sciences}{Clinical Bioinformatics}
+\cventry{09/2006 -- 03/2011}{\textbf{Doctoral Thesis in Life Sciences (PhD)}}{University of Lausanne}{CH}{}{Evolutionary Genomics Group - Kaessmann Laboratory}
+\cvitem{}{\textit{Molecular changes underlying mammalian phenotypic innovation}}
+\cventry{10/2004 -- 02/2006}{\textbf{Master of Science (MSc)}}{University of Lausanne}{CH}{}{Genomics and experimental biology}
+\cvitem{}{\textit{Evolution of egg-protein genes by analysis of syntenic regions: \newline From amphibians to mammals}}
+\cventry{10/2001 -- 07/2004}{\textbf{Bachelor of Science (BSc equivalence)}}{University of Lausanne}{CH}{}{Molecular and cellular biology \newline Plant biochemistry and biotechnology}
+
+\section{Awarded fellowships}
+\cventry{2008}{\textbf{PhD Fellowship}}{Roche Research Foundation}{}{}{}
+\cventry{2012}{\textbf{Postdoctoral Fellowship}}{Swiss National Science Foundation}{Prospective Researcher}{}{}{}
+
+%\section{Future Research}
+%\cvitem{}{During my career I acquired a broad set of skills in evolutionary and comparative genomics, bioinformatics and large dataset analysis. I plan to further develop these skills and apply my expertise with medically related questions which will require basic experimental and clinical data analyses. I have developed a strong interest in the underlying mechanisms of pathogenesis, deregulation of cell proliferation programmes and cancer development which I aim to further develop in my future research.}
+
+\section{Skills and Academic Background}
+\cvitem{Biology}{Molecular evolution \newline
+Population genomics \newline
+Regulation of gene expression \newline
+mRNA sequencing \newline
+Genome sequencing and annotation \newline
+Mammalian \& microbial genetics \newline
+Microbiology and virology \newline
+Structural biology and imaging (basics in optical and electron microscopy)}
+\cvitem{Bioinformatics}{Comparative genomics \newline
+Genome variant analysis \newline
+Alignment methods and search algorithms \newline
+Phylogenetic theory, maximum likelihood and bayesian analysis \newline
+High throughput sequencing data management and analysis \newline
+Gene prediction and modeling \newline
+Genetic and clinical data modelling \newline
+Microarray design and analysis \newline
+Network analysis \newline
+Data mining}
+\cvitem{Mathematics and Statistics}{
+Probability and statistical theory \newline
+Applied statistical methods, regression and multivariate data analysis \newline
+Basics in calculus and linear algebra}
+\cvitem{Computational methods}{Data mining and prediction, scientific software, relational database design, Linux~system~administration, exploratory data analysis, machine learning}
+\cvitem{Programming}{Python, Perl, R, SQL, C++, Java, shell programming, sed/awk, \LaTeX, CGI, HTML/CSS}
+\cvitem{Web development}{Node.js, Meteor, React, Redux, GraphQL, Django, Flask, HTML5, CSS}
+
+\section{References}
+\cvitem{}{Prof. Swee Lay Thein, National Heart, Lung and Blood Institute (NIH), Bethesda MD, USA - Chief, Sickle Cell Branch}
+\cvitem{}{Dr. B. Clark, King's College Hospital, London, UK - Molecular Pathology Lead}
+\cvitem{}{Prof. C. P. Ponting, University of Oxford, UK - Unit Deputy Director}
+\cvitem{}{Dr. F. Di Palma, TGAC, Norwich, UK - Head of Vertebrate and Health Genetics}
+\cvitem{}{Prof. K. Lindblad-Toh, Broad Institute, Cambridge MA, USA - Research group director}
+\cvitem{}{Prof. H. Kaessmann, University of Heidelberg, Germany - PhD advisor}
+\cvitem{}{Prof. W. Wahli, University of Lausanne, Switzerland - MSc advisor}
+
+\section{Languages}
+\cvlanguage{}{German}{Mothertongue}
+\cvlanguage{}{French}{ILR Level 4+}
+\cvlanguage{}{English}{ILR Level 4+}
+\cvlanguage{}{Italian}{ILR Level 1}
+
+%\section{Personal Interests}
+%\renewcommand{\listitemsymbol}{-~} % Changes the symbol used for lists
+%\cvlistdoubleitem{Rowing}{Coastal Rowing}
+%\cvlistdoubleitem{Skiing/Snowboarding}{Cross country skiing}
+%\cvlistdoubleitem{Cycling (Road- and Mountainbiking)}{Running}
+%\cvlistdoubleitem{Programming/Informatics}{Visual design}
+%\cvlistdoubleitem{Photography}{Architecture}
+%\\
+\newpage
+\include{pub}
+%\newpage
+%\include{references}
+
+\end{document}
